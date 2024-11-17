@@ -1,0 +1,131 @@
+:root {
+    --primary-blue: #2563eb;
+    --secondary-blue: #3b82f6;
+    --light-blue: #bfdbfe;
+    --dark-blue: #1e40af;
+    --background: #f8fafc;
+    --text: #1e293b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--secondary-blue);
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bio {
+    font-size: 1.25rem;
+    color: var(--text);
+}
+
+.connect {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--light-blue);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1.25rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .bio {
+        font-size: 1.1rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
